@@ -17,7 +17,7 @@ p {
 
 .cardcontainer {
   display: flex;
-  padding-top: 12%;
+  padding-top: 19%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -28,7 +28,7 @@ p {
   /*
   box-shadow: 4px 4px 15px 2px #8888;
   */
-  transition: .5s;
+  transition: .9s;
 
 }
 
@@ -37,7 +37,7 @@ p {
 }
 
 .designcards:hover {
-  transform: translateY(-25%);
+  transform: translateY(-40%);
 }
 
 .designcards:hover ~ .designcards {
@@ -46,4 +46,19 @@ p {
 
 .designcards img {
   width: 350px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.designcards {
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }

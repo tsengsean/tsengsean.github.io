@@ -17,6 +17,7 @@ p {
 
 .headshot {
   width: 30%;
+  padding-top: 1.5%;
 }
 
 .aboutme {
@@ -45,7 +46,7 @@ p {
 
 .headshot {
   animation-name: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 
@@ -63,5 +64,5 @@ p {
 
 .text {
   animation-name: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }

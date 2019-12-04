@@ -40,7 +40,7 @@ html, body {
 .writingcards {
   width: 70%;
   opacity: .5;
-  transition: transform .3s;
+  transition: .5s;
   /*
   display: flex;
   flex-direction: row;
