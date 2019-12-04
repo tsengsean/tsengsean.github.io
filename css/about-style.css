@@ -2,6 +2,12 @@ html, body {
   overflow: hidden;
 }
 
+h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: lighter;
+  font-size: 24pt;
+}
+
 .headshot {
   width: 30%;
 }
