@@ -1,0 +1,77 @@
+html, body {
+  overflow: hidden;
+}
+
+#once {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: lighter;
+  font-size: 24pt;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 110%;
+}
+
+#there {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: lighter;
+  font-size: 18pt;
+  margin-bottom: 5%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: lighter;
+  font-size: 13pt;
+  margin: 1.5%;
+  line-height: 130%;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.image {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
+
+.Me {
+  width: 35%;
+  margin-top: 1%;
+  /*
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+*/
+  shape-outside: polygon((888px 415px,882px 806px,729px 1299px,1260px 1301px,1251px 1185px,1206px 897px,1300px 612px,1207px 377px,1215px 292px,1153px 233px,1064px 239px);
+  float: left;
+}
+
+.aboutlink {
+  text-decoration: none;
+  color: slategray;
+}
+
+
+.aboutlink:visited {
+  color: slategray;
+}
+
+.aboutlink:hover {
+  color: #aedde6;
+}

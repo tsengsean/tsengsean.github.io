@@ -1,0 +1,31 @@
+html, body {
+  overflow: hidden;
+}
+
+.headshot {
+  width: 30%;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.headshot {
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
+}

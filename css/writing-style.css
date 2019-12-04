@@ -1,0 +1,95 @@
+html, body {
+    overflow: hidden;
+}
+
+.cardlink {
+  width: 50%;
+}
+
+.centerme {
+  vertical-align: middle;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.cardcolumn {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: ;
+  vertical-align: middle;
+  padding: 4%;
+}
+
+.cardrow {
+  background-color: ;
+  width: 30%;
+  text-align: center;
+  /*
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+*/
+}
+.writingcards {
+  width: 70%;
+  opacity: .5;
+  transition: transform .3s;
+  /*
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+*/
+}
+
+.writingcards:hover {
+  opacity: 1;
+  transition: .5s;
+  transform: scale(1.05);
+}
+
+/*
+.cardsrow2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cardsrow1 img {
+  width: 70%;
+  margin: 15%;
+  vertical-align: middle;
+ justify-content: space-between;
+}
+
+.cardsrow2 img {
+  width: 45%;
+  margin-left: 25%;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+*/
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.writingcards {
+  animation-name: zoomIn;
+  animation-duration: 3s;
+}

@@ -1,0 +1,67 @@
+/* Nav Bar CSS */
+html, body {
+    height: 100vh;
+    width: 98vw;
+    margin-top: .5%;
+    padding: 0;
+}
+
+/* Logo link width */
+#homelink {
+  width: 4%;
+}
+
+/* Logo image width */
+.home {
+  width: 100%;
+}
+
+/* Nav Bar flexbox */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Nav Bar individual divs */
+.navitem {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Nav Bar link text */
+.navtext {
+  font-size: 23px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.navtext:visited {
+  color: black;
+}
+
+.navtext:hover {
+  color: gray;
+}
+
+/* Animation */
+
+@keyframes fadeInNav {
+    from {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.navbar {
+  animation-name: fadeInNav;
+  animation-duration: 3s;
+}

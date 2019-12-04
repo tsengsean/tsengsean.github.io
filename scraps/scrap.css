@@ -1,0 +1,112 @@
+/* html
+<div id="carousel">
+
+<div id="carousel-controls">
+    <button id="button-previous">
+        <img src="photo img/leftarrow.png" alt="Previous">
+    </button>
+    <button id="button-next">
+        <img src="photo img/rightarrow.png" alt="Next">
+    </button>
+</div>
+
+    <div id="carousel-image-row">
+
+        <div class="carousel-image">
+            <img src="photo img/1.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/2.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/4.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/5.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/6.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/9.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/10.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/11.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/12.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/13.jpg" alt="">
+        </div>
+        <div class="carousel-image">
+            <img src="photo img/14.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+
+<script src="js/photo.js"></script>
+*/
+
+/* Overall carousel dimensions */
+#carousel,
+.carousel-image {
+  width: 560px;
+  height: 400px;
+}
+
+/* Carousel frame setup */
+#carousel {
+  position: relative;
+  border: 3px white;
+  overflow: hidden;
+}
+
+/* Images */
+#carousel-image-row {
+  /* Part 1.2: Make images appear in a row */
+  display: flex;
+  flex-direction: row;
+  /* Part 1.3: What kind of positioning? */
+  position: absolute;
+  left:0px;
+  /* Part 3.1: Add transition */
+  transition: 0.5s;
+
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+/* Controls */
+.hidden {
+  visibility: hidden;
+}
+
+/* Part 4: optional button styling */
+  #carousel-controls {
+      /* vertically center */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      /* spacing between the two buttons */
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      /* appear in front of images */
+      z-index: 1;
+  }
+
+  #button-next,
+  #button-previous {
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+  }
