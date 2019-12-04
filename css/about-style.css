@@ -8,6 +8,13 @@ h2 {
   font-size: 24pt;
 }
 
+
+p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: lighter;
+  font-size: 13pt;
+}
+
 .headshot {
   width: 30%;
 }
@@ -17,6 +24,11 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.text {
+  padding: 2%;
+  width: 20%;
 }
 
 @keyframes fadeInLeft {
@@ -33,5 +45,23 @@ h2 {
 
 .headshot {
   animation-name: fadeInLeft;
+  animation-duration: 3s;
+}
+
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.text {
+  animation-name: fadeInRight;
   animation-duration: 3s;
 }

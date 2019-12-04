@@ -17,15 +17,14 @@ p {
 
 .cardcontainer {
   display: flex;
-  padding-top: 30%;
+  padding-top: 12%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
 .designcards {
-  background-color: #eeedf0;
   border-radius: 5%;
-  padding: 2%;
+  padding: 5%;
   /*
   box-shadow: 4px 4px 15px 2px #8888;
   */
@@ -38,7 +37,7 @@ p {
 }
 
 .designcards:hover {
-  transform: translateY(-55%);
+  transform: translateY(-25%);
 }
 
 .designcards:hover ~ .designcards {
