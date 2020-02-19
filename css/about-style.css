@@ -15,6 +15,20 @@ p {
   font-size: 13pt;
 }
 
+.link {
+  text-decoration: none;
+  color: slategray;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:after {
+  color: slategray;
+}
+
+
 .headshot {
   width: 30%;
   padding-top: 1.5%;
@@ -29,7 +43,7 @@ p {
 
 .text {
   padding: 2%;
-  width: 23%;
+  width: 30%;
 }
 
 @keyframes fadeInLeft {
