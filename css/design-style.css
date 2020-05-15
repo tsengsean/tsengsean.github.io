@@ -1,12 +1,18 @@
-html, body {
+/* html, body {
   overflow: hidden;
+} */
+img {
+  padding-bottom: 3px;
+  margin-bottom: 0px;
 }
-
 
 h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: lighter;
   font-size: 20pt;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 
 p {
@@ -14,7 +20,112 @@ p {
   font-weight: lighter;
   font-size: 10pt;
 }
+/*
+.pagedescript {
+ padding-top: 10%;
+ padding-left: 35%;
+}
+*/
+h4 {
+  font-size: 15pt;
+  font-family: 'Overpass', sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.grid {
+  margin: 12px;
+  max-width: 1180px;
+  margin: auto;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row {
+  padding: 5px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding-bottom: 8px;
+}
+
+/* Clear floats after rows
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+  text-align: center;
+  /*
+  padding-bottom: 0px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: medium;
+  */
+  border-radius: 0px;
+  background-color: #e6eaeb;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*
+.container {
+  height: 100%;
+}
+.designcards img {
+  height: 25%;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.designcards img {
+    flex-basis: 50%;
+    height: 50%;
+  }
+}
+}
+
+/*
 .cardcontainer {
   display: flex;
   padding-top: 19%;
@@ -27,7 +138,7 @@ p {
   padding: 5%;
   /*
   box-shadow: 4px 4px 15px 2px #8888;
-  */
+
   transition: .9s;
 
 }

@@ -5,14 +5,14 @@ html, body {
 h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: lighter;
-  font-size: 24pt;
+  font-size: 2.5vw;
 }
 
 
 p {
   font-family: 'Overpass', sans-serif;
   font-weight: lighter;
-  font-size: 13pt;
+  font-size: 1.4vw;
 }
 
 .link {
@@ -30,7 +30,7 @@ a:after {
 
 
 .headshot {
-  width: 30%;
+  height: 84.9vh;
   padding-top: 1.5%;
 }
 
@@ -43,6 +43,7 @@ a:after {
 
 .text {
   padding: 2%;
+  padding-left: 4%;
   width: 30%;
 }
 

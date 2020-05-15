@@ -37,6 +37,12 @@ html, body {
 }
 */
 }
+
+.cardrow2 {
+  width: 31%;
+  text-align: center;
+}
+
 .writingcards {
   width: 70%;
   opacity: .5;
